@@ -86,6 +86,15 @@
     border-radius: 1rem;
 }
 
+.pokemon:hover {
+    box-shadow: 10px 5px 15px #5f29e1;
+}
+
+#logo {
+    position: relative;
+    left: 45%;
+}
+
 .pokemon .number {
     color: #000;
     opacity: .3;
@@ -144,6 +153,19 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+img {
+    transition: transform .5s;
+    transform: translateX(0) scale(1.1);
+    z-index: 10;
+}
+  
+img:hover,
+img:focus {
+    transform: translateX(10px) scale(1.5);
+    
+    
 }
 
 @media screen and (min-width: 380px) {
